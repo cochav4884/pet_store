@@ -23,9 +23,9 @@ public class PetStoreController {
 	
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	public PetStoreData insertPetStore(@RequestBody PetStoreService petStoreData) {
+	public PetStoreData insertPetStore(@RequestBody PetStoreData petStoreData) {
 		log.info("Creating pet Store {}", petStoreData);
-		return petStoreService.savePetStore(petStoreData);
+	    return petStoreService.savePetStore(petStoreData);	
 	}
 	
 	@PutMapping("/{petStoreId}")

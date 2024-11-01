@@ -29,12 +29,12 @@ public class PetStoreService {
     private void copyPetStoreFields(PetStore petStore, PetStoreData petStoreData) {
         petStore.setPetStoreName(petStoreData.getPetStoreName());
         petStore.setPetStoreAddress(petStoreData.getPetStoreAddress());
+        petStore.setPetStoreCity(petStoreData.getPetStoreCity());
+        petStore.setPetStoreState(petStoreData.getPetStoreState());
+        petStore.setPetStoreZip(petStoreData.getPetStoreZip());
+        petStore.setPetStorePhone(petStoreData.getPetStorePhone());
         // Exclude customers and employees to avoid recursion
-    }
-
-	public PetStoreData savePetStore(PetStoreService petStoreData) {
-		return null;
-	}		
+    }		
 	
  }
 

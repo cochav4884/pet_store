@@ -25,7 +25,7 @@ public class PetStore {
   
   private String petStoreName;
   private String petStoreAddress;
-  private String petStorecity;
+  private String petStoreCity;
   private String petStoreState;
   private String petStoreZip;
   private String petStorePhone;
